@@ -28,6 +28,16 @@ export default createSchema({
           title: "Subtitle"
         },
         {
+          name: "coverImage",
+          type: "image",
+          title: "Cover Image"
+        },
+        {
+          name: "date",
+          type: "datetime",
+          title: "Date"
+        },
+        {
           name: "slug",
           type: "slug",
           title: "Slug"
