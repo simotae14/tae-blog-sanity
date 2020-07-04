@@ -52,7 +52,8 @@ export default createSchema({
         {
           name: "date",
           type: "datetime",
-          title: "Date"
+          title: "Date",
+          validation: Rule => Rule.required()
         },
         {
           name: "author",
@@ -60,12 +61,14 @@ export default createSchema({
           title: "Author",
           to: [{
             type: "author"
-          }]
+          }],
+          validation: Rule => Rule.required()
         },
         {
           name: "slug",
           type: "slug",
-          title: "Slug"
+          title: "Slug",
+          validation: Rule => Rule.required()
         }
       ]
     }
